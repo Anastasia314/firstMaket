@@ -97,3 +97,125 @@ a {
     padding: 7px 69px;
     display: inline-block;
 }
+
+.grey {
+    background: #f8f8f8;
+}
+
+.history {
+    padding-top: 63px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.elk {
+    position: relative;
+}
+
+.img_elk {
+    position: absolute;
+    bottom: 51px;
+    left: calc(50% - 135px);
+}
+
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 53px;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    height: 10px;
+    width: 189px;
+    position: absolute;
+    background: url("../img/history_decor.png");
+    bottom: -16px;
+    left: calc(50% - 95px);
+}
+
+.history_content {
+    background-color: white;
+    padding: 52px 67px 73px;
+    margin-top: -120px;
+    position: relative;
+    margin-left: 98px;
+    margin-right: 98px;
+}
+
+.history_content p {
+    font-size: 16px;
+    color: rgb(128, 127, 127);
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+p.history_last {
+    margin-bottom: 40px;
+}
+
+.history_hr {
+    margin-bottom: 51px;
+}
+
+.history_links {
+    text-align: center;
+}
+
+.link_white {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 2px solid rgba(0, 0, 0);
+    padding: 16px 36px;
+}
+
+.link_orange {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 36px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 2px solid #e6ae48;
+    background: #e6ae48;
+}
+
+.facts {
+    padding: 90px 0 67px;
+}
+
+.fact {
+    float: left;
+    text-align: center;
+    width: 25%;
+    color: rgb(37, 37, 37);
+    padding: 35px 0 43px;
+}
+
+.fact_number {
+    font-size: 35px;
+
+}
+
+.fact_text {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.fact + .fact {
+    border-left: 1px solid rgba(0, 0, 0, 0.9);
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+}
