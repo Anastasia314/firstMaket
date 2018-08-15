@@ -219,3 +219,116 @@ p.history_last {
     content: "";
     clear: both;
 }
+
+.features_text {
+    width: 50%;
+    float: left;
+    padding: 50px 15px 0 calc(50% - 570px);
+}
+
+.features_img {
+    width: 50%;
+    float: left;
+}
+
+.features_img img {
+    width: 100%;
+    
+}
+
+.h3_left {
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+.h3_left::after {
+    height: 8px;
+    width: 64px;
+    background: url("../img/arrow1.png");
+    left: 0;
+}
+
+.features_title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.features_undertitle {
+    font-size: 20px;
+    color: rgb(64,64,64);
+    font-style: italic;
+    margin-bottom: 39px;
+}
+
+.features_content {
+    color: #807f7f;
+    margin-bottom: 43px;
+}
+
+.black {
+    background: #252525;
+    padding: 86px 0 110px;
+}
+
+.h3_white {
+    color: #fff;
+}
+
+.h3_white::after {
+    background: url('../img/history%20decor.png');
+}
+
+.teams_item {
+    float: left;
+    width: 360px;
+    padding-top: 50px;
+    position: relative;
+    
+}
+
+.teams_item + .teams_item {
+    margin-left: 30px;
+}
+
+.teams_hover {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.teams_link:hover .teams_hover {
+    opacity: 1;
+}
+
+.teams_name {
+    font-size: 12px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 66px;
+    left: 19px;
+    letter-spacing: 3px;
+}
+
+.teams_position {
+    font-size: 16px;
+    color: rgb(197,197,197);
+    font-style: italic;
+    position: absolute;
+    left: 18px;
+    bottom: 42px;
+}
+
+.teams_position::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: -9px;
+}
