@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i');
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -73,7 +76,6 @@ a {
     top: calc(50vh - 103px);
 }
 
-
 .header p {
     font-size: 14px;
     text-transform: uppercase;
@@ -84,7 +86,7 @@ a {
 .header h1 {
     font-size: 60px;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 24px;
     margin-bottom: 24px;
 }
 
@@ -147,6 +149,10 @@ h3::after {
     position: relative;
     margin-left: 98px;
     margin-right: 98px;
+}
+
+.history_content h3 {
+    margin-bottom: 40px;
 }
 
 .history_content p {
@@ -387,8 +393,6 @@ p.history_last {
     margin-bottom: 10px;
 }
 
-
-
 .services_content {
     font-size: 16px;
     color: rgb( 128, 127, 127);
@@ -426,11 +430,11 @@ p.history_last {
 
 .quote {
     border: 3px solid #fff;
-    padding: 33px;
+    background: url(../img/quotes.png) 50% no-repeat;
     border-radius: 50%;
     width: 93px;
     height: 93px;
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
 }
 
 .review_text {
@@ -460,7 +464,7 @@ p.history_last {
 .recent_text {
     float: left;
     width: 50%;
-    padding: 50px 15px 50px calc(50% - 570px);
+    padding: 30px 15px 30px calc(50% - 570px);
 }
 
 .recent_img {
@@ -476,7 +480,7 @@ p.history_last {
     padding: 9px 15px;
     border: 1px solid;
     display: inline-block;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .recent_title {
@@ -490,18 +494,18 @@ p.history_last {
     font-size: 16px;
     color: rgb(128, 127, 127);
     line-height: 1.5;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .recent_date {
     font-size: 10px;
     text-transform: uppercase;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
 }
 
 .recent_item + .recent_item {
     border-top: 1px solid rgba(0, 0, 0, 0.09);
-    padding-top: 45px;
+    padding-top: 25px;
 }
 
 .recent_item:last-child .recent_date {
@@ -510,17 +514,141 @@ p.history_last {
 
 .work {
     padding: 91px 0 117px;
+    clear: both;
 }
 
 .work_item {
     float: left;
     width: 33.333%;
     text-align: center;
-    height: 200px;;
+    height: 200px;
+    ;
 }
 
 .work_item_last {
     padding-top: 15px;
+}
+
+.pricing {
+    float: left;
+    width: 360px;
+    margin-top: 113px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding-bottom: 51px;
+    margin-bottom: 30px;
+}
+
+.pricing + .pricing {
+    margin-left: 30px;
+}
+
+.icon {
+    width: 63px;
+    height: 63px;
+    background-color: #fff;
+    margin: -29px auto 34px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.icon_rocket {
+    background-image: url('../img/racket.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.icon_camera {
+    background-image: url('../img/camera.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.icon_leaf {
+    background-image: url('../img/leaf.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.pricing_header {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgb( 255, 254, 254);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.romb {
+    height: 9px;
+    width: 9px;
+    margin: -0px auto 27px;
+    background: url('../img/Rectangle%2024.png') 50% no-repeat;
+    position: relative;
+
+}
+
+.romb::after,
+.romb::before {
+    position: absolute;
+    height: 1px;
+    width: 97px;
+    content: "";
+    top: 50%;
+    background: rgba(255, 255, 255, .08);
+}
+
+.romb::after {
+    right: -110px;
+}
+
+.romb::before {
+    left: -110px;
+}
+
+.pricing_text {
+    font-size: 16px;
+    color: rgb( 128, 127, 127);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing_price {
+    font-size: 40px;
+    color: rgb( 255, 255, 255);
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.pricing_price sup {
+    font-size: 14px;
+    top: -22px;
+    margin-right: 9px;
+}
+
+.pricing_list {
+    font-size: 16px;
+    color: rgb( 128, 127, 127);
+    text-align: center;
+}
+
+.pricing_list li {
+    padding: 18px 0;
+}
+
+.pricing_list li:nth-child(odd) {
+    background: #2c2c2c;
+}
+
+.pricing_link {
+    text-align: center;
+}
+
+.pricing .link_orange {
+    margin-top: 45px;
+    display: inline-block;
+
 }
 
 .footer {
@@ -531,10 +659,11 @@ p.history_last {
 
 .footer a {
     font-size: 10px;
-    color: rgb(80,80,80);
+    color: rgb(80, 80, 80);
     text-transform: uppercase;
-    padding: 4px 35px; 
+    padding: 4px 35px;
 }
+
 .footer a + a {
     border-left: 1px solid #e6ae48;
 }
